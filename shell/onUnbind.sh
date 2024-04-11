@@ -1,0 +1,2 @@
+#!/usr/bin/env sh
+curl -s -X POST -H "Content-Type: application/json" -d "{\"vendor_id\":\"${1}\", \"product_id\":\"${2}\", \"client_ip\":\"${3}\", \"connection_id\":\"${4}\", \"surprise_unbound\":\"${5}\"}" "http://127.0.0.1:${VIRTUALHERE_SERVER_EVENTS_HANDLER_PORT}/onUnbind"
